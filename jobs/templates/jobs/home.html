@@ -1,7 +1,5 @@
 <!--home.html-->
 
-
-
 <!doctype html>
 <html lang="en">
 {% load static %}
@@ -28,7 +26,6 @@
 <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
 
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -49,7 +46,6 @@
     <link href="album.css" rel="stylesheet">
   </head>
   <body>
-
 
 <main role="main">
 
@@ -78,14 +74,11 @@
       <div class="row">
        {% for job in jobs.all %}
     
-
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
            <img class="card-img-top" src="{{ job.image.url }}"
             <div class="card-body">
-            
-              <p class="card-text">{{ job.summary }}</p>
-              
+              <p class="card-text">{{ job.summary }}</p>             
             </div>
           </div>
         </div>
