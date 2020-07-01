@@ -10,3 +10,4 @@ class Job(models.Model):
         """ Provides a description of each job summary in Admin """
         return self.summary
 
+

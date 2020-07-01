@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Job
 
+
 def home(request):
     """ Home page view """
     jobs = Job.objects
@@ -10,4 +11,7 @@ def detail(request, job_id):
     """ Job detail view """
     job_detail = get_object_or_404(Job, pk=job_id)
     return render(request, 'jobs/detail.html', {'job': job_detail})
+
+
+
 
